@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void test(unsigned int n){
+void test(unsigned long int n){
   cout<<sumaIterativa(n)<<endl;
   cout<<sumaRecursiva(n)<<endl;
   cout<<sumaDirecta(n)<<endl;
