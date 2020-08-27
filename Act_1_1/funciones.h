@@ -3,15 +3,15 @@
 
 using namespace std;
 
-long int sumaIterativa(long int n){
-  long int suma = 0;
-  for(long int i=1; i<=n; i++){
+unsigned long int sumaIterativa(unsigned long int n){
+  unsigned long int suma = 0;
+  for(unsigned long int i=1; i<=n; i++){
     suma+=i;
   }
   return suma;
 }
 
-long int sumaRecursiva(long int n){
+unsigned long int sumaRecursiva(unsigned long int n){
   if(n>0){
     return sumaRecursiva(n-1) + n;
   } else {
@@ -19,13 +19,8 @@ long int sumaRecursiva(long int n){
   }
 }
 
-long int sumaDirecta(long int n){
-  if(n>0){
-    return (n+1)*n/2;
-  } else {
-    return 0;
-  }
-  
+unsigned long int sumaDirecta(unsigned long int n){
+  return (n+1)*n/2;  
 }
 
 #endif
