@@ -1,2 +1,2 @@
 language = "undefined"
-run = ""
+run = "cd /home/runner/A00517153ActividadesFormativas/Act_1_1 && g++ main.cpp && ./a.out"
