@@ -3,7 +3,14 @@
 
 using namespace std;
 
-unsigned long int sumaIterativa(unsigned long int n){
+class Funciones{
+  public:
+  unsigned long int sumaIterativa(unsigned long int n);
+  unsigned long int sumaRecursiva(unsigned long int n);
+  unsigned long int sumaDirecta(unsigned long int);
+};
+
+unsigned long int Funciones::sumaIterativa(unsigned long int n){
   unsigned long int suma = 0;
   for(unsigned long int i=1; i<=n; i++){
     suma+=i;
@@ -11,7 +18,7 @@ unsigned long int sumaIterativa(unsigned long int n){
   return suma;
 }
 
-unsigned long int sumaRecursiva(unsigned long int n){
+unsigned long int Funciones::sumaRecursiva(unsigned long int n){
   if(n>0){
     return sumaRecursiva(n-1) + n;
   } else {
@@ -19,7 +26,7 @@ unsigned long int sumaRecursiva(unsigned long int n){
   }
 }
 
-unsigned long int sumaDirecta(unsigned long int n){
+unsigned long int Funciones::sumaDirecta(unsigned long int n){
   return (n+1)*n/2;  
 }
 
