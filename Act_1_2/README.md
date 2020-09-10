@@ -29,4 +29,4 @@ Este algoritmo es de complejidad O(n), ya que es un recorrido lineal para buscar
 
 **Análisis de complejidad temporal**
 
-Este algoritmo es de complejidad O(log2(n)), ya que lo va buscando determinando si es mayor igual o menor que el valor del medio, por lo que solo va haciendo una busqueda reducida por las ramas del arbol.
+Este algoritmo es de complejidad O(log2(n)), ya que lo va buscando determinando si es mayor, igual o menor que el valor del medio, por lo que solo va haciendo una busqueda reducida por las ramas del arbol.
