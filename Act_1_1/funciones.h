@@ -1,3 +1,9 @@
+/*---------------
+Nombre: Johann Palomino Galvan
+Matricula: A00517153
+Actividad: Act 1.1 Funciones Iterativas, Recursivas y su analisis de Complejidad
+---------------*/
+
 #ifndef FUNCIONES_H
 #define FUNCIONES_H
 

@@ -1,3 +1,9 @@
+/*---------------
+Nombre: Johann Palomino Galvan
+Matricula: A00517153
+Actividad: Act 1.2 - Algoritmos de Busqueda y Ordenamiento 
+---------------*/
+
 #ifndef SORTS_H
 #define SORTS_H
 
