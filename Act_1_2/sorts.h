@@ -48,18 +48,19 @@ void Sorts<T>::mergeArray(vector<T> &A, vector<T> &B, int low, int mid, int high
       i++;
     } else {
       B[k] = A[j];
+      j++;
     }
     k++;
   }
-  if (i>mid){
-    for (j<=high;j++;){
-      B[k++]=A[j];
-    }
-  } else {
-    for (i<=mid;i++;){
-      B[k++]=A[i];
-    }
-  }
+  if (i > mid) {
+		for (; j <= high; j++) {
+			B[k++] = A[j];
+		}
+	} else {
+		for (; i <= mid; i++) {
+			B[k++] = A[i];
+		}
+	}
 }
 
 template <class T>
@@ -96,18 +97,11 @@ void Sorts<T>::ordenaSeleccion(vector<T> &v){
 
 template <class T>
 void Sorts<T>::ordenaBurbuja(vector<T> &v){
-  int pos;
-
-	for (int i = v.size() - 1; i > 0; i--) {
-		pos = 0;
-		for (int j = 1; j <= i; j++) {
-			if (v[j] > v[pos]) {
-				pos = j;
+  for (int i = v.size() - 1; i > 0; i--) {
+		for (int j = 0; j < i; j++) {
+			if (v[j] > v[j + 1]) {
+				swap(v, j, j + 1);
 			}
-		}
-
-		if (pos != i) {
-			swap(v, i, pos);
 		}
 	}
 }
@@ -123,7 +117,7 @@ template <class T>
 int Sorts<T>::busqSecuencial(vector<T> &v, int n){
   for (int i=0; i<v.size();i++){
     if (n==v[i]){
-      return v[i];
+      return i;
     }
   }
   return -1;
