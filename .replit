@@ -1,2 +1,0 @@
-language = "cpp"
-run = "cd /home/runner/A00517153ActividadesFormativas/Act_1_2 && g++ main.cpp && ./a.out"
